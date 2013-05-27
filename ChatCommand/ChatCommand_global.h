@@ -1,0 +1,12 @@
+#ifndef CHATCOMMAND_GLOBAL_H
+#define CHATCOMMAND_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(CHATCOMMAND_LIBRARY)
+#  define CHATCOMMAND_EXPORT Q_DECL_EXPORT
+#else
+#  define CHATCOMMAND_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // CHATCOMMAND_GLOBAL_H
